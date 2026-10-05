@@ -86,7 +86,7 @@ public class XulambsApp {
         IO.println("2 - Para entrega");
         int escolha = lerNumero("Digite sua opção: ");
         return switch (escolha) {
-            case 1 -> new Pedido();
+            case 1 -> new PedidoLocal();
             case 2 -> criarPedidoEntrega();
             default -> null;
         };

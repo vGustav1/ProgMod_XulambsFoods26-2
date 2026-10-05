@@ -19,8 +19,7 @@ public class PedidoEntrega extends Pedido{
 
     @Override 
     public double precoAPagar(){
-        double valorPizzas = super.precoAPagar();
-        return valorPizzas + taxaEntrega.valorTaxa();
+        return valorPizzas() + taxaEntrega.valorTaxa();
     }
 
     @Override 

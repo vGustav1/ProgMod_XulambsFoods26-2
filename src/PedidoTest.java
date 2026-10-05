@@ -10,7 +10,7 @@ public class PedidoTest {
 
     @BeforeEach 
     public void setUp(){
-        pedido = new Pedido();
+        pedido = new PedidoLocal();
         pizzaVazia = new Pizza();
         pedido.adicionarPizza(pizzaVazia);
     }
